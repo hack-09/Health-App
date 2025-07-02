@@ -118,12 +118,6 @@ You can use any image-based lab report like:
 
 ---
 
-## 📸 Screenshots
-
-> 📷 Add screenshots here if you're deploying or submitting it as a portfolio project
-
----
-
 ## 🌐 Deployment (Optional)
 
 You can deploy:
