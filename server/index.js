@@ -7,8 +7,13 @@ const fs = require('fs');
 const app = express();
 app.use(cors());
 
+const PORT = process.env.PORT || 5000;
+
 const upload = multer({ dest: 'uploads/' });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Korai Health Lab Report Analyzer API');
+});
 app.post('/upload', upload.single('report'), (req, res) => {
   const filePath = req.file.path;
   
@@ -24,4 +29,4 @@ app.post('/upload', upload.single('report'), (req, res) => {
   });
 });
 
-app.listen(5000, () => console.log('Server running on http://localhost:5000'));
+app.listen(PORT, () => console.log('Server running on http://localhost:5000'));
