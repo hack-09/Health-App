@@ -4,6 +4,11 @@ A smart, responsive web app that allows users to upload lab reports (image-based
 
 ---
 
+🚀 Live Frontend: [https://health-app-opal-theta.vercel.app](https://health-app-opal-theta.vercel.app)  
+🔌 Backend API: [https://health-app-fsqr.onrender.com](https://health-app-fsqr.onrender.com)
+
+---
+
 ## 🚀 Features
 
 ### ✅ Core Functionality
