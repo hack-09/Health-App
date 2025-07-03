@@ -16,6 +16,7 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("")
 
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   const handleUpload = async () => {
     setError("");
@@ -26,7 +27,7 @@ export default function Dashboard() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/upload", formData);
+      const res = await axios.post(`${apiUrl}/upload`, formData);
       setRawText(res.data.text);
       const structured = parseLabReport(res.data.text);
       setParsedData(structured);

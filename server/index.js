@@ -29,4 +29,7 @@ app.post('/upload', upload.single('report'), (req, res) => {
   });
 });
 
-app.listen(PORT, () => console.log('Server running on http://localhost:5000'));
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
